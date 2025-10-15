@@ -1,0 +1,44 @@
+{
+  "name": "shikijs-markdown-it-for-enhancer",
+  "type": "module",
+  "version": "3.13.0",
+  "description": "markdown-it integration for shiki",
+  "author": "Par9uet <par9uet@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "shiki",
+    "markdown-it",
+    "markdown-it-enhancer"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./core": "./dist/core.mjs",
+    "./async": "./dist/async.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build"
+  },
+  "peerDependencies": {
+    "markdown-it-enhancer": "catalog:integrations"
+  },
+  "peerDependenciesMeta": {
+    "markdown-it-enhancer": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "shiki": "workspace:*"
+  },
+  "devDependencies": {
+    "@shikijs/transformers": "workspace:*"
+  }
+}
