@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
+import { MarkdownIt } from '@markdown-it-enhancer/core'
 import { transformerMetaHighlight } from '@shikijs/transformers'
-import { MarkdownIt } from 'markdown-it-enhancer'
 import { createHighlighter } from 'shiki'
 import { expect, it } from 'vitest'
 import Shiki from '../src'

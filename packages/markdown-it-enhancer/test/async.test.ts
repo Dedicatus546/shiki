@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises'
-import { MarkdownIt } from 'markdown-it-enhancer'
+import { MarkdownIt } from '@markdown-it-enhancer/core'
 import { codeToHtml } from 'shiki'
 import { expect, it } from 'vitest'
 import { fromAsyncCodeToHtml } from '../src/async'

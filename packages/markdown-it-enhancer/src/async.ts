@@ -1,4 +1,4 @@
-import type { MarkdownIt } from 'markdown-it-enhancer'
+import type { MarkdownIt } from '@markdown-it-enhancer/core'
 import type { CodeToHastOptions, ShikiTransformer } from 'shiki'
 import type { MarkdownItShikiSetupOptions } from './core'
 
